@@ -29,7 +29,6 @@ public class MoodAnalyzerTest {
         } catch (MoodAnalysisException e) {
             e.printStackTrace();
         }
-
     }
 
     @Test
