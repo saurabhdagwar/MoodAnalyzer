@@ -45,11 +45,13 @@ public class MoodAnalyzerTest {
 
     @Test
     public void givenWrong_ThenThrowException() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("");
         try {
-            moodAnalyzer.analyzeMood(null);
+            ExpectedException exceptionRule = ExpectedException.none();
+            exceptionRule.expect(MoodAnalysisException.class);
+            moodAnalyzer.analyzeMood();
         } catch (MoodAnalysisException e) {
-            Assert.assertEquals(MoodAnalysisException.exceptionType.ENTERED_NULL,e.type);
+            Assert.assertEquals(MoodAnalysisException.exceptionType.ENTERED_EMPTY,e.type);
         }
     }
 }
