@@ -6,7 +6,7 @@ import org.junit.rules.ExpectedException;
 
 public class MoodAnalyzerTest {
     @Test
-    public void Message_containsSad_ReturnSAD() {
+    public void givingMessage_containsSad_shouldReturnSAD() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in Sad mood");
         String sadMessage = null;
         try {
@@ -18,7 +18,7 @@ public class MoodAnalyzerTest {
     }
 
     @Test
-    public void Message_containsNull_ReturnHAPPY() {
+    public void givingMessage_containsNull_shouldReturnHAPPY() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
         String mood = null;
         try {
@@ -32,7 +32,7 @@ public class MoodAnalyzerTest {
     }
 
     @Test
-    public void Message_containsHappy_ReturnHAPPY() {
+    public void givingMessage_containsAny_shouldReturnHAPPY() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in Any mood");
         String happyMessage;
         try {
