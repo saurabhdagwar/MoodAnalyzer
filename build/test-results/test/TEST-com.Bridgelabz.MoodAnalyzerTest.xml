@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.Bridgelabz.MoodAnalyzerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-09-23T13:11:07" hostname="DESKTOP-JVE4C36" time="0.03">
+<testsuite name="com.Bridgelabz.MoodAnalyzerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-09-25T19:31:45" hostname="DESKTOP-JVE4C36" time="0.063">
   <properties/>
-  <testcase name="givenWrong_ThenThrowException" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.007"/>
-  <testcase name="givingMessage_containsNull_shouldReturnHAPPY" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.021"/>
-  <testcase name="givingMessage_containsAny_shouldReturnHAPPY" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.0"/>
-  <testcase name="givingMessage_containsSad_shouldReturnSAD" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.0"/>
+  <testcase name="givenWrong_ThenThrowException" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.01"/>
+  <testcase name="givingMessage_containsNull_shouldReturnHAPPY" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.05"/>
+  <testcase name="givingMessage_containsAny_shouldReturnHAPPY" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.001"/>
+  <testcase name="givingMessage_containsSad_shouldReturnSAD" classname="com.Bridgelabz.MoodAnalyzerTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[com.Bridgelabz.MoodAnalysisException: Enter proper mood
 	at com.Bridgelabz.MoodAnalyzer.analyzeMood(MoodAnalyzer.java:20)
