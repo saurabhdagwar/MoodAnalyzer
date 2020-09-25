@@ -2,7 +2,6 @@ package com.Bridgelabz;
 
 public class MoodAnalyzer {
     public String mood;
-
     public MoodAnalyzer(String mood) {
         this.mood = mood;
     }
@@ -19,6 +18,5 @@ public class MoodAnalyzer {
         } catch (NullPointerException exception) {
             throw new MoodAnalysisException(MoodAnalysisException.exceptionType.ENTERED_NULL, "Enter proper mood");
         }
-
     }
 }
