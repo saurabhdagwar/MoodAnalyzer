@@ -7,11 +7,6 @@ public class MoodAnalyzer {
         this.mood = mood;
     }
 
-    public String analyzeMood(String mood) throws MoodAnalysisException {
-        this.mood = mood;
-        return analyzeMood();
-    }
-
     public String analyzeMood() throws MoodAnalysisException {
         try {
             if (mood.length() == 0) {
